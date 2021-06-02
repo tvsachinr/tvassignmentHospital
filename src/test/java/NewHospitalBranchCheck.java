@@ -35,12 +35,13 @@ public class NewHospitalBranchCheck {
         Patient patient5 = new Patient("Pavan", Location.Mumbai, LocalDate.of(2021, 5, 31));
 
         Hospital hospitalChinm = new Hospital(Location.Bangalorecity);
-        hospitalChinm.addpatient(patient1); // adding patient to the hospitalchinm arraylist
-        hospitalChinm.addpatient(patient2);
+        hospitalChinm.addpatient(patient1); // adding patient to the hospitalchinm datag
+        hospitalChinm.addpatient(patient2); // Adding 2nd patient record
         hospitalChinm.addpatient(patient3);
         hospitalChinm.addpatient(patient4);
         hospitalChinm.addpatient(patient5);
 
+        //Printing the percentage result
         System.out.println("Out of total " +hospitalChinm.getTotalPatient()+" ,no of Patients visited in the last 3 days, Percentage of Local patient is : "
                 + hospitalChinm.patientpercentage()+" %");
     }
