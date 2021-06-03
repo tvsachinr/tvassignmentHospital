@@ -1,7 +1,6 @@
 import java.time.LocalDate;
 import java.util.Date;
 
-// Patient class creation to store all the details belonging to a patient
 public class Patient {
     private String p_name;
     private Location p_location;
@@ -13,6 +12,8 @@ public class Patient {
         this.p_location=p_location;
         this.p_visitdate=p_visitdate;
     }
+
+    // methods to return Patient class variables
     public String getPatientName() {
         return p_name;
     }

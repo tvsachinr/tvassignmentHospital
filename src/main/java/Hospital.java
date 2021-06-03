@@ -43,6 +43,8 @@ public class Hospital
                && patient.getPatientVisitdate().isBefore(LocalDate.now().plusDays(1))
                && patient.getPatientVisitdate().isAfter(LocalDate.now().minusDays(3))).count();
     }
+
+    //function to get patient percentage visited in 3 days
     public long patientpercentage()
     {
         return ((getLocalPatientin3days()*100)/getTotalPatient());
